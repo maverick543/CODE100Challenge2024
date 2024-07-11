@@ -9,8 +9,8 @@ void Main()
 	var one = new { x = 145, width = 20, y = 75, height = 150 };
 	var itemsInOne = puzzle.coords.Where(c => isInsideRect(145, 75, 20, 150, c[0], c[1]));
 
-	var itemsInZero1 = puzzle.coords.Where(c => isInsideCircle(280, 150, 75, c[0], c[1]) && !isInsideCircle(280, 150, 50, c[0], c[1]));
-	var itemsInZero2 = puzzle.coords.Where(c => isInsideCircle(510, 150, 75, c[0], c[1]) && !isInsideCircle(510, 150, 50, c[0], c[1]));
+	var itemsInZero1 = puzzle.coords.Where(c => isInsideCircle(280, 150, 75, c[0], c[1]) && !isInsideCircle(280, 150, 55, c[0], c[1]));
+	var itemsInZero2 = puzzle.coords.Where(c => isInsideCircle(510, 150, 75, c[0], c[1]) && !isInsideCircle(510, 150, 55, c[0], c[1]));
 
 	(itemsInOne.Count() + itemsInZero1.Count() + itemsInZero2.Count()).Dump();
 
