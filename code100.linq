@@ -41,7 +41,7 @@ static bool isInsideCircle(int circle_x, int circle_y, int radius, int x, int y)
 public Puzzle LoadJson()
 {
 	Puzzle items;
-	using (StreamReader r = new StreamReader(@"c:\projects\code100\coordinatesystem.json"))
+	using (StreamReader r = new StreamReader(@"C:\Projects\CODE100Challenge2024\coordinatesystem.json"))
 	{
 		string json = r.ReadToEnd();
 		items = JsonSerializer.Deserialize<Puzzle>(json);
